@@ -1,0 +1,26 @@
+/*
+Exercise 3 - Repetition
+Write a C program to calculate the sum of the numbers from 1 to n. 
+Where n is a keyboard input.
+e.g.
+n -> 100
+sum = 1+2+3+... + 99+100 = 5050
+n -> 1-
+sum = 1+2+3+.. +10 = 55
+*/
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n ;//the number get by user
+  int i;//this used for loop
+  int sum=0;//this variable store the sum.and its initialize to "0" because of garbage value.
+  cout<<"Enter Number :";
+  cin>> n;
+  for(i=1;i<=n;i++) 
+    {
+      sum = sum+i ;
+    }
+  cout<<"Sum is :"<<sum;
+  return 0;
+}
