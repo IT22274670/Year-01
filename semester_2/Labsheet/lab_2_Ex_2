@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void area(float length, float width);
+struct Reactangle {
+  int length;
+  int width;
+} rec;
+int main() {
+  int length, width;
+  cout << "Enter length:";
+  cin >> rec.length;
+  cout << "Enter width:";
+  cin >> rec.width;
+  area(rec.length, rec.width);
+
+  return 0;
+}
+void area(float length, float width) {
+  int Area;
+  Area = (length + width) * 2;
+  cout << "Area is :" << Area;
+}
