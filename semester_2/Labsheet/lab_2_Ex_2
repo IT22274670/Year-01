@@ -4,8 +4,10 @@ int area(int length, int width);
 struct Reactangle {
   int length;
   int width;
-} yard, house;
+};
 int main() {
+
+  Reactangle yard, house;
 
   cout << "Enter length of Yard:";
   cin >> yard.length;
