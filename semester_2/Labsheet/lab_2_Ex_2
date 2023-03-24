@@ -1,22 +1,28 @@
 #include <iostream>
 using namespace std;
-void area(float length, float width);
+int area(int length, int width);
 struct Reactangle {
   int length;
   int width;
-} rec;
+} yard, house;
 int main() {
-  int length, width;
-  cout << "Enter length:";
-  cin >> rec.length;
-  cout << "Enter width:";
-  cin >> rec.width;
-  area(rec.length, rec.width);
+
+  cout << "Enter length of Yard:";
+  cin >> yard.length;
+  cout << "Enter width of Yard:";
+  cin >> yard.width;
+
+  cout << "Enter length of House:";
+  cin >> house.length;
+  cout << "Enter width of House:";
+  cin >> house.width;
+  cout << "Area is :"
+       << area(yard.length, yard.width) - area(house.length, house.width);
+  ;
 
   return 0;
 }
-void area(float length, float width) {
+int area(int length, int width) {
   int Area;
-  Area = (length + width) * 2;
-  cout << "Area is :" << Area;
+  return Area = (length + width) * 2;
 }
